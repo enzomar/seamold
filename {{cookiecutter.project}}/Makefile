@@ -55,7 +55,7 @@ package: setup ## create a python package under dist folder
 	. venv/bin/activate; python setup.py sdist
 
 tar: setup ## create a tar package (needs GIT repo)
-	git archive --format=tar.gz -o httplog.tar.gz HEAD -v 
+	git archive --format=tar.gz -o {{cookiecutter.project}}.tar.gz HEAD -v 
 
 clean:
 	# clean up
